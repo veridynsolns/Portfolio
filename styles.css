@@ -914,7 +914,7 @@ section {
   }
 
   .brand-logo-large {
-    height: 76px;
+    height: 88px;
   }
 
   .hero {
@@ -1010,6 +1010,12 @@ section {
   }
 }
 
+@media (max-width: 640px) {
+  .brand-logo-large {
+    height: 82px;
+  }
+}
+
 @media (max-width: 600px) {
   .mobile-gallery {
     grid-template-columns: 1fr;
@@ -1017,11 +1023,5 @@ section {
 
   .phone-frame {
     max-width: 240px;
-  }
-}
-
-@media (max-width: 640px) {
-  .brand-logo-large {
-    height: 68px;
   }
 }
