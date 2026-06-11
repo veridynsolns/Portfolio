@@ -1025,3 +1025,25 @@ section {
     max-width: 240px;
   }
 }
+
+/* ==============================
+   KittyCare Project Enhancements
+   ============================== */
+
+.project-card h3 {
+  color: var(--text);
+}
+
+.project-card .project-badge.alt {
+  box-shadow: 0 12px 28px rgba(255, 79, 216, 0.14);
+}
+
+.phone-frame img {
+  background: #fff7ef;
+}
+
+@media (min-width: 901px) {
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
