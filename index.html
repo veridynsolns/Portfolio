@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veridyn Solutions | Mobile Apps, Web Apps & Websites</title>
-  <meta name="description" content="Veridyn Solutions builds premium mobile apps, web apps, dashboards, and responsive websites for brands and growing businesses." />
+  <meta name="description" content="Veridyn Solutions builds mobile apps, web apps, dashboards, and responsive websites for businesses in Dubai and beyond." />
   <meta name="keywords" content="Veridyn Solutions, mobile app development, web app development, website design, Flutter, Firebase, dashboards, Dubai" />
   <meta name="theme-color" content="#070b17" />
   <meta property="og:title" content="Veridyn Solutions | Mobile Apps, Web Apps & Websites" />
-  <meta property="og:description" content="A compact digital product team building polished mobile apps, web apps, and responsive websites." />
+  <meta property="og:description" content="A Dubai software studio building mobile apps, web apps, and responsive websites." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/Veridyn Solutions logo.png" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Veridyn Solutions | Mobile Apps, Web Apps & Websites" />
-  <meta name="twitter:description" content="Premium digital products built for clarity, speed, and strong presentation." />
+  <meta name="twitter:description" content="Mobile apps, web apps, and websites built by a Dubai software studio." />
   <meta name="twitter:image" content="assets/Veridyn Solutions logo.png" />
   <link rel="icon" type="image/png" href="assets/Veridyn Solutions logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,25 +37,31 @@
       "description": "Veridyn Solutions builds mobile apps, web apps, dashboards, and responsive websites for modern businesses."
     }
   </script>
+  <script>(function(){var d=document.documentElement;d.classList.add("js");var t;try{t=localStorage.getItem("veridyn-theme")}catch(e){}if(t!=="light"&&t!=="dark"){t=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"}d.setAttribute("data-theme",t)})()</script>
+  <script src="script.js" defer></script>
+  <script src="background.js" defer></script>
 </head>
 <body>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-  <div class="bg-orb orb-3"></div>
-  <div class="page-noise"></div>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  
 
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html#top" class="brand" aria-label="Veridyn Solutions home">
-        <img src="assets/Veridyn Solutions logo.png" alt="Veridyn Solutions logo" class="brand-logo-large" />
+        <img src="assets/logo-night.png" alt="Veridyn Solutions" class="brand-logo logo-night" width="172" height="40" />
+        <img src="assets/logo-day.png" alt="Veridyn Solutions" class="brand-logo logo-day" width="172" height="40" />
       </a>
 
       <nav class="nav">
         <a href="#team">Team</a>
         <a href="#services">Services</a>
         <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to day mode" aria-pressed="false">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -63,11 +69,10 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow">Three builders. One sharp digital front.</div>
-          <h1>We craft <span>mobile apps</span>, <span>web apps</span>, and <span>websites</span> that look premium and work like a charm.</h1>
+          <div class="eyebrow">Software studio in Dubai, UAE</div>
+          <h1>We build mobile apps, web apps, and business websites.</h1>
           <p>
-            Veridyn Solutions blends polished product design, modern front-end presentation,
-            backend engineering, and scalable systems into one focused studio presence for serious digital work.
+            Veridyn Solutions is a three-person team covering Flutter development, enterprise software, backend engineering, and UI design. One team takes a project from interface to server.
           </p>
 
           <div class="hero-actions">
@@ -77,37 +82,26 @@
 
           <div class="hero-stats">
             <article>
-              <strong>2018+</strong>
-              <span>Engineering experience in active practice</span>
+              <strong>Since 2018</strong>
+              <span>Production software experience on the team</span>
             </article>
             <article>
-              <strong>Flutter + Web</strong>
-              <span>Cross-platform product delivery</span>
+              <strong>iOS + Android</strong>
+              <span>One Flutter codebase for both platforms</span>
             </article>
             <article>
-              <strong>3 Specialists</strong>
-              <span>Front-end, enterprise systems, and backend/data support</span>
+              <strong>3 specialists</strong>
+              <span>Front-end, enterprise systems, and backend</span>
             </article>
           </div>
         </div>
 
         <div class="hero-visual reveal delay-1">
-          <div class="orb orb-a"></div>
-          <div class="orb orb-b"></div>
-          <div class="hero-panel glass">
-            <div class="mini-tag">Studio Snapshot</div>
-            <div class="stack-tiles">
-              <span>Flutter Development</span>
-              <span>Responsive Websites</span>
-              <span>.NET Web API</span>
-              <span>Firebase Systems</span>
-              <span>Admin Dashboards</span>
-              <span>React Interfaces</span>
-              <span>Backend APIs</span>
-              <span>Data Analytics</span>
-              <span>Product UI/UX</span>
-              <span>Virtual Assistance</span>
-            </div>
+          <div class="hero-collage" aria-hidden="true">
+            <img class="hc hc-1" src="assets/kittycare/dashboard.jpeg" alt="" />
+            <img class="hc hc-2" src="assets/church_app/home.jpeg" alt="" />
+            <img class="hc hc-3" src="assets/chill_haven/landing.jpeg" alt="" />
+            <span class="hc-chip">Flutter · Firebase · .NET · React</span>
           </div>
         </div>
       </div>
@@ -116,11 +110,8 @@
     <section class="team-section" id="team">
       <div class="container section-head reveal">
         <div class="section-kicker">The Team</div>
-        <h2>Built like a compact powerhouse.</h2>
-        <p>
-          A strong team blending mobile app development, enterprise software engineering,
-          backend systems, UI design, and digital operations support into one strong delivery unit.
-        </p>
+        <h2>Three engineers, one delivery team</h2>
+        <p>Mobile, enterprise software, backend, and UI design are covered in-house, so you work with one team from first sketch to launch.</p>
       </div>
 
       <div class="container team-grid">
@@ -165,7 +156,7 @@
 
         <article class="member-card glass reveal delay-1">
           <div class="member-top">
-            <img src="assets/rovincy-logo.png" alt="Rovincy logo" class="member-photo member-logo" />
+            <img src="assets/rovincy.jpg" alt="Rovincy" class="member-photo" width="72" height="72" />
             <div class="member-heading">
               <p class="member-role">Software Engineer • Full-Stack Solutions Architect</p>
               <h3>Rovincy</h3>
@@ -202,7 +193,7 @@
 
         <article class="member-card glass reveal delay-2">
           <div class="member-top">
-            <img src="assets/fabrice-logo.png" alt="KwesiCoder logo" class="member-photo member-logo" />
+            <img src="assets/fabrice.jpg" alt="Prince Fabrice" class="member-photo" width="72" height="72" />
             <div class="member-heading">
               <p class="member-role">Software Engineer • UI Designer</p>
               <h3>Prince Fabrice</h3>
@@ -250,28 +241,28 @@
     <section class="services-section" id="services">
       <div class="container section-head reveal">
         <div class="section-kicker">Services</div>
-        <h2>What this trio can bring to the table.</h2>
+        <h2>What we build</h2>
       </div>
 
       <div class="container services-grid">
         <article class="service-card glass reveal">
           <h3>Mobile App Development</h3>
-          <p>Cross-platform Flutter apps with polished UI, thoughtful user flow, and production-ready architecture.</p>
+          <p>Cross-platform Flutter apps for iOS and Android, from interface design to Firebase backend.</p>
         </article>
 
         <article class="service-card glass reveal delay-1">
           <h3>Web App & Dashboard Systems</h3>
-          <p>Clean admin panels, workflow tools, internal systems, and user-facing portals built for clarity and speed.</p>
+          <p>Admin panels, internal tools, and customer portals.</p>
         </article>
 
         <article class="service-card glass reveal delay-2">
           <h3>Business Website Design</h3>
-          <p>Modern responsive websites that sharpen brand presence and turn visitors into warm leads.</p>
+          <p>Responsive business websites with clear navigation and a contact route on every page.</p>
         </article>
 
         <article class="service-card glass reveal">
           <h3>Backend & Integration</h3>
-          <p>Firebase, APIs, databases, cloud-connected features, and backend services that keep products humming beneath the surface.</p>
+          <p>APIs, databases, and Firebase or .NET services that connect your apps and dashboards.</p>
         </article>
       </div>
     </section>
@@ -279,16 +270,24 @@
     <section class="work-section" id="work">
       <div class="container section-head reveal">
         <div class="section-kicker">Selected Work</div>
-        <h2>Selected work built for clarity, scale, and impact.</h2>
+        <h2>Selected projects</h2>
+      </div>
+
+      <div class="container work-filter" role="group" aria-label="Filter projects">
+        <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" type="button" data-filter="mobile" aria-pressed="false">Mobile apps</button>
+        <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web and systems</button>
       </div>
 
       <div class="container work-grid">
-        <article class="project-card glass reveal">
+        <article class="project-card glass reveal featured" data-cat="mobile">
+<div class="project-thumb"><img src="assets/church_app/home.jpeg" alt="" loading="lazy" /><img src="assets/church_app/sermons.jpeg" alt="" loading="lazy" /><img src="assets/church_app/events.jpeg" alt="" loading="lazy" /></div>
+<div class="project-body">
           <div class="project-badge">Featured App</div>
           <h3>Church App Platform</h3>
           <p>
             A modern Flutter and Firebase church platform designed to bring content, community,
-            and administration into one seamless mobile experience.
+            and administration into one mobile app.
           </p>
           <ul>
             <li>Sermons, events, and prayer engagement flows</li>
@@ -299,9 +298,12 @@
           <div class="project-actions">
             <a href="church-app.html" class="btn btn-primary">View Project</a>
           </div>
-        </article>
+        </div>
+</article>
 
-        <article class="project-card glass reveal delay-1">
+        <article class="project-card glass reveal" data-cat="mobile">
+<div class="project-thumb"><img src="assets/kittycare/splash-screen.jpeg" alt="" loading="lazy" /><img src="assets/kittycare/dashboard.jpeg" alt="" loading="lazy" /><img src="assets/kittycare/reminders.jpeg" alt="" loading="lazy" /></div>
+<div class="project-body">
   <div class="project-badge alt">Pet Care App</div>
   <h3>KittyCare</h3>
   <p>
@@ -317,9 +319,12 @@
   <div class="project-actions">
     <a href="kittycare-project.html" class="btn btn-secondary">View Project</a>
   </div>
+</div>
 </article>
 
-        <article class="project-card glass reveal delay-1">
+        <article class="project-card glass reveal" data-cat="web">
+<div class="project-thumb web"><img src="assets/enterprise_systems/dashboard.jpeg" alt="" loading="lazy" /></div>
+<div class="project-body">
           <div class="project-badge alt">Enterprise Systems</div>
           <h3>Health Insurance Solutions</h3>
           <p>
@@ -335,9 +340,12 @@
           <div class="project-actions">
             <a href="enterprise-systems.html" class="btn btn-secondary">View Project</a>
           </div>
-        </article>
+        </div>
+</article>
 
-        <article class="project-card glass reveal delay-2">
+        <article class="project-card glass reveal" data-cat="web">
+<div class="project-thumb web"><img src="assets/studio_websites/homepage.png" alt="" loading="lazy" /></div>
+<div class="project-body">
           <div class="project-badge soft">Studio Websites</div>
           <h3>Responsive Business Web Builds</h3>
           <p>
@@ -353,9 +361,12 @@
           <div class="project-actions">
             <a href="studio-websites.html" class="btn btn-secondary">View Project</a>
           </div>
-        </article>
+        </div>
+</article>
 
-        <article class="project-card glass reveal">
+        <article class="project-card glass reveal" data-cat="web">
+<div class="project-thumb"><img src="assets/chill_haven/landing.jpeg" alt="" loading="lazy" /><img src="assets/chill_haven/event-details.jpeg" alt="" loading="lazy" /><img src="assets/chill_haven/checkout.jpeg" alt="" loading="lazy" /></div>
+<div class="project-body">
           <div class="project-badge soft">Event Platform</div>
           <h3>Chill Haven Event Platform</h3>
           <p>
@@ -371,7 +382,8 @@
           <div class="project-actions">
             <a href="chill-haven-project.html" class="btn btn-secondary">View Project</a>
           </div>
-        </article>
+        </div>
+</article>
       </div>
     </section>
 
@@ -379,11 +391,8 @@
       <div class="container contact-shell glass reveal">
         <div class="contact-intro">
           <div class="section-kicker">Contact</div>
-          <h2>Let’s build something sharp, modern, and built to perform.</h2>
-          <p class="contact-lead">
-            Whether you need a mobile app, a responsive website, or a custom digital solution,
-            Veridyn Solutions is ready to discuss the right build for your vision.
-          </p>
+          <h2>Tell us what you need built</h2>
+          <p class="contact-lead">Send a short description of your project. We reply with questions, a rough scope, and next steps.</p>
         </div>
 
         <div class="contact-grid refined-contact-grid">
@@ -402,7 +411,7 @@
           <a href="https://wa.me/971563311417" class="contact-card" target="_blank" rel="noopener noreferrer">
             <span class="contact-label">WhatsApp</span>
             <strong>Start a quick chat</strong>
-            <small>Ideal for faster conversations, follow-ups, and warm leads.</small>
+            <small>Quick questions and follow-ups.</small>
           </a>
 
           <div class="contact-card availability-card">
@@ -411,6 +420,28 @@
             <small>Working with clients locally and remotely across mobile, web, and product design engagements.</small>
           </div>
         </div>
+
+        <form class="contact-form" id="brief-form" novalidate data-endpoint="">
+          <h3>Or send a project brief</h3>
+          <div class="form-row">
+            <label>Name<input name="name" type="text" autocomplete="name" required /></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required /></label>
+          </div>
+          <label>Project type
+            <select name="type">
+              <option>Mobile app</option>
+              <option>Web app or dashboard</option>
+              <option>Business website</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>Details<textarea name="details" rows="4" required></textarea></label>
+          <div class="form-foot">
+            <button class="btn btn-primary" type="submit"><span class="btn-label">Send brief</span></button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+
       </div>
     </section>
   </main>
